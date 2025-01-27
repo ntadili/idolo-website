@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+  body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  /* NAV BAR STYLING */
+  nav {
+    background-color: rgb(0, 0, 0);
+    /* border-bottom: 1px solid rgb(160, 70, 70); */
+    padding: 25px 20px 10px 20px;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Left and Right Logos */
+  .logo img {
+    height: 30px;
+    display: block;
+  }
+
+  /* Center Navigation Links */
+  .nav-links{
+    list-style: none;
+    display: flex;
+    gap: 36px;
+    margin-bottom: 0;
+  }
+  .nav-links li{
+    display: inline;
+  }
+
+  .nav-links a{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover{
+    color: #007bff;
+  }
+
+  /* Responsive Design TEMPORARILY*/
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-wrap: wrap;
+    }
+    .nav-links {
+      flex: 1;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  
+/* ################################# */
+  /* Adding the fonts */
+  @font-face {
+    font-family: "SF Pro Display";
+    src: url(./Resources/Fonts/SF-Pro-Display-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "SF Pro Display";
+    src: url(./Resources/Fonts/SF-Pro-Display-Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  header {
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 80px;
+  }
+
+  header h1{
+    font-size: 3.4rem;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 700;
+  }
+
+  header p{
+    font-size: 1.3rem;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 400;
+  }
+/* ############################# */
+  /* CALL TO ACTION HERO */
+  .callToActionContainer{
+    margin-top: 24px;
+  }
+
+  .bookCall{
+    width: 137px;
+    height: 50px;
+    padding: 10px 20px;
+    height: 50px;
+    background-color: #FF5102;
+    border: 1px solid #FF5102;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+
+  .learnMore{
+    width: 137px;
+    height: 50px;
+    padding: 10px 20px;
+    height: 50px;
+    border: 1px solid #FF5102;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
+  
+/* ############################# */
+  /* IMAGE SLIDER */
+  .image-slider{
+    display: flex;
+    gap: 18px;
+    height: 300px;
+    margin: 0 30px;
+    transition: opacity 1.2s ease-out, transform 0.4s ease-out;
+
+    opacity: 1;
+    will-change: opacity, transform; /* Optimize for animations */
+    transform: translateX(0);
+  }
+
+  .image-slider img{
+    height: 100%;
+    width: auto;
+  }
+
+
+
+  .image-slider-container {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .image-slider-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Height of the shadow */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    pointer-events: none; /* Non-interactive */
+    z-index: 1;
+  }
