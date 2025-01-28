@@ -1,0 +1,24 @@
+.section2{
+    height: 70vh;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+  }
+  .whatWeDo{
+    margin-top: 130px;
+    text-align: center;
+  }
+  .titles h1{
+    font-size: 3rem;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 700;
+  }
+
+  .titles p{
+    font-size: 1.3rem;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 400;
+  }
+
+  .schema-container{
+    margin-top: 50px;
+  }
