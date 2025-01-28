@@ -20,15 +20,17 @@
 
   .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 100%;
     margin: 0 auto;
+    width: 768px;
+    gap: 570px;
   }
 
   /* Left and Right Logos */
   .logo img {
-    height: 30px;
+    height: 20px;
     display: block;
   }
 
@@ -48,7 +50,7 @@
     font-weight: 400;
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.1rem;
+    font-size: 0.87rem;
     transition: color 0.3s ease;
   }
   .nav-links a:hover{
