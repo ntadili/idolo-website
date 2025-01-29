@@ -1,0 +1,55 @@
+.section3{
+    height: 100vh;
+  }
+
+  .howWeDo{
+    text-align: center;
+  }
+
+  .stats-container{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+  }
+
+  .stats-container div{
+    border: solid 1px #FF5102;
+    padding: 11px 21px;
+    color: #FF5102;
+    font-family: "SF Pro Display", sans-serif;
+  }
+
+  .stats-container div span{
+    font-weight: 700;
+  }
+
+  /* Gallery styling */
+  .main-gallery{
+    margin-top: 70px;
+    overflow: hidden;
+  }
+  
+  .main-gallery > *{
+    display: flex;
+    gap: 13px;
+    white-space: nowrap;
+  }
+
+  /* Animations */
+  @keyframes scroll-left-to-right {
+    0% { transform: translateX(-50%); } /* Start at -50% (half of duplicated content) */
+    100% { transform: translateX(0); } /* End at 0% */
+  }
+
+  @keyframes scroll-right-to-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .upper-gallery {
+    animation: scroll-left-to-right 20s linear infinite; /* Adjust 20s for speed */
+  }
+
+  .lower-gallery {
+    animation: scroll-right-to-left 21s linear infinite;
+  }
