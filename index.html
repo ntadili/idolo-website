@@ -52,10 +52,33 @@
     /* Gallery styling */
     .main-gallery{
       margin-top: 70px;
+
+      overflow: hidden;
     }
     .main-gallery > *{
       display: flex;
       gap: 13px;
+
+      white-space: nowrap;
+    }
+
+    /* Animations */
+    @keyframes scroll-left-to-right {
+      0% { transform: translateX(-50%); } /* Start at -50% (half of duplicated content) */
+      100% { transform: translateX(0); } /* End at 0% */
+    }
+
+    @keyframes scroll-right-to-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .upper-gallery {
+      animation: scroll-left-to-right 20s linear infinite; /* Adjust 20s for speed */
+    }
+
+    .lower-gallery {
+      animation: scroll-right-to-left 20s linear infinite;
     }
   </style>
 </head>
@@ -143,9 +166,27 @@
           <img src="./Resources/Images/upper06.png" alt="Gallery Image 06">
           <img src="./Resources/Images/upper07.png" alt="Gallery Image 07">
           <img src="./Resources/Images/upper08.png" alt="Gallery Image 08">
+          <!-- CLONNING -->
+          <img src="./Resources/Images/upper01.png" alt="Gallery Image 01">
+          <img src="./Resources/Images/upper02.png" alt="Gallery Image 02">
+          <img src="./Resources/Images/upper03.png" alt="Gallery Image 03">
+          <img src="./Resources/Images/upper04.png" alt="Gallery Image 04">
+          <img src="./Resources/Images/upper05.png" alt="Gallery Image 05">
+          <img src="./Resources/Images/upper06.png" alt="Gallery Image 06">
+          <img src="./Resources/Images/upper07.png" alt="Gallery Image 07">
+          <img src="./Resources/Images/upper08.png" alt="Gallery Image 08">
         </div>
 
         <div class="lower-gallery" style="margin-top: 13px;">
+          <img src="./Resources/Images/lower01.png" alt="Gallery Image 09">
+          <img src="./Resources/Images/lower02.png" alt="Gallery Image 10">
+          <img src="./Resources/Images/lower03.png" alt="Gallery Image 11">
+          <img src="./Resources/Images/lower04.png" alt="Gallery Image 12">
+          <img src="./Resources/Images/lower05.png" alt="Gallery Image 13">
+          <img src="./Resources/Images/lower06.png" alt="Gallery Image 14">
+          <img src="./Resources/Images/lower07.png" alt="Gallery Image 15">
+          <img src="./Resources/Images/lower08.png" alt="Gallery Image 16">
+          <!-- CLONNING -->
           <img src="./Resources/Images/lower01.png" alt="Gallery Image 09">
           <img src="./Resources/Images/lower02.png" alt="Gallery Image 10">
           <img src="./Resources/Images/lower03.png" alt="Gallery Image 11">
